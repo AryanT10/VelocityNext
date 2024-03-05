@@ -7,3 +7,8 @@ export interface CustomButtonProps {
 	MouseEventHandler<HTMLButtonElement>;
 	btnType?: "button" | "submit";
 }
+
+export interface SearchMenuProps {
+	menu: string;
+	setMenu: (menu: string) => void;
+}
