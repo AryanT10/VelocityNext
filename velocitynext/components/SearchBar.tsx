@@ -1,13 +1,14 @@
 "use client"
+
 import { useState } from 'react'
 import SearchMenu from './SearchMenu'
 const SearchBar = () => {
-  const [menu, setMenu] = useState('');
+  const [manufacturer, setMenu] = useState('');
   const handleSearch = () => { }
   return (
     <form className="searchbar" onSubmit={handleSearch}>
       <div className="searchbar__item">
-        <SearchMenu menu={menu} setMenu={setMenu} />
+        <SearchMenu manufacturer={manufacturer} setMenu={setMenu} />
       </div>
     </form>
   )

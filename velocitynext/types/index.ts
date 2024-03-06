@@ -9,6 +9,6 @@ export interface CustomButtonProps {
 }
 
 export interface SearchMenuProps {
-	menu: string;
+	manufacturer: string;
 	setMenu: (menu: string) => void;
 }
