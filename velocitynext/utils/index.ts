@@ -35,7 +35,7 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
 	// keyyyyyyy
 	const url = new URL(`https://cdn.imagin.studio/getimage`);
 
-	const {make, year, model} = car;
+	const { make, year, model } = car;
 	url.searchParams.append('customer', 'hrjavascript-mastery');
 	url.searchParams.append('make', make);
 	url.searchParams.append('modelFamily', model.split(' ')[0]);
@@ -44,4 +44,12 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
 	url.searchParams.append('angle', `${angle}`);
 
 	return `${url}`;
+}
+
+export const updateSearchParams = (type: string, value: string) => {
+
+	const searchParams = new URLSearchParams(window.location.search);
+	searchParams.set(type, value)
+	const newPathName = `${window.location.pathname}?${searchParams.toString()}`
+	return newPathName
 }
