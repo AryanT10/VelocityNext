@@ -6,12 +6,12 @@ import Image from 'next/image';
 import { CarProps } from '@/types';
 import CustomButton from './CustomButton';
 import { Model } from 'mongoose';
-import { calculateCarRent } from '@/utils';
+import { calculateCarRent, generateCarImageUrl } from '@/utils';
 import CarDetails from './CarDetails';
 
 interface CarCardProps { car: CarProps; }
 
-const CarCard = ({ car }: CarProps) => {
+const CarCard = ({ car }: CarCardProps) => {
 
 	// constants
 	const { city_mpg, year, make, model, transmission, drive } = car;
@@ -36,7 +36,7 @@ const CarCard = ({ car }: CarProps) => {
 			</p>
 
 			<div className="relative w-full h-40 my-3 object-contain">
-				<Image src="/hero.png" alt="Car model" fill priority className='object-contain' />
+				<Image src={generateCarImageUrl(car)} alt="Car model" fill priority className='object-contain' />
 			</div>
 
 			<div className="relative flex w-full mt-2">
