@@ -1,4 +1,4 @@
-import { CarCard, CustomFilter, Hero, SearchBar } from '@/components';
+import { CarCard, CustomFilter, Hero, SearchBar, ShowMore } from '@/components';
 import { fetchCars } from '@/utils';
 import Image from "next/image";
 import { fuels, yearsOfProduction } from '../constants';
@@ -38,6 +38,11 @@ export default async function Home({ searchParams }) {
               {allCars?.map((car) =>
                 <CarCard car={car} />)}
             </div>
+{/* SHOW MORE */}
+            <ShowMore
+              pageNumber={(searchParams.limit || 10) / 10}
+              isNext={(searchParams.limit || 10) > allCars.length}
+            />
           </section>
         ) :
           (
@@ -47,6 +52,7 @@ export default async function Home({ searchParams }) {
             </div>
           )
         }
+        <S
       </div>
     </main>
   );
