@@ -8,7 +8,7 @@ import { manufacturers } from '@/constants';
 import { SearchMenuProps } from '@/types'
 
 
-const SearchMenu = ({ manufacturer, setMenu }: SearchMenuProps) => {
+const SearchMenu = ({ selected, setSelected }: SearchMenuProps) => {
 	const [query, setQuery] = useState("")
 
 	const filteredMenu =
@@ -23,7 +23,7 @@ const SearchMenu = ({ manufacturer, setMenu }: SearchMenuProps) => {
 
 	return (
 		<div className="search-manufacturer">
-			<Combobox value={manufacturer} onChange={setMenu}>
+			<Combobox value={selected} onChange={setSelected}>
 				<div className="relative w-full">
 					<Combobox.Button className="absolute top-[14px]">
 						<Image src="/car-logo.svg" width={20} height={20} className="ml-4" alt="Car logo" />
