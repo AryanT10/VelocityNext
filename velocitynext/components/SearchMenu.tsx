@@ -5,10 +5,10 @@ import { useState, Fragment } from 'react';
 import { Combobox, Transition } from '@headlessui/react'
 
 import { manufacturers } from '@/constants';
-import { SearchMenuProps } from '@/types'
+import { SearchManuFacturerProps } from '@/types'
 
 
-const SearchMenu = ({ selected, setSelected }: SearchMenuProps) => {
+const SearchMenu = ({ selected, setSelected }: SearchManuFacturerProps) => {
 	const [query, setQuery] = useState("")
 
 	const filteredMenu =

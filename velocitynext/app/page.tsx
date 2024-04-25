@@ -58,7 +58,7 @@ export default function Home() {
         </div>
 
         <div className="home__filters">
-          <SearchBar setManufacturer={setManufacturer} setModel={setModel} />
+          <SearchBar setManuFacturer={setManufacturer} setModel={setModel} />
 
           <div className="home__filter-container">
             <CustomFilter title="fuel" options={fuels} setFilters={setFuel} />
