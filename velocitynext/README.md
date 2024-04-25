@@ -12,11 +12,11 @@ Welcome to Velocity Next, a sleek web application showcasing a wide variety of c
 
 ## Technology Stack
 
-- **Next.js**: The React framework for production.
-- **React**: A JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
-- **TypeScript**: A strongly typed programming language that builds on JavaScript.
-- **Combox and other libraries**: Enhance UI components and manage state effectively.
+- **Next.js**
+- **React**
+- **Tailwind CSS**
+- **TypeScript**
+- **Combox and other libraries**
 
 ### Prerequisites
 
