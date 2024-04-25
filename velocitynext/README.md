@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Velocity Next
 
-## Getting Started
+Welcome to Velocity Next, a sleek web application showcasing a wide variety of cars. Built using Next.js, React, Tailwind CSS, and TypeScript, this application leverages the power of modern web technologies to deliver a responsive and interactive car catalog. Whether you're a car enthusiast or a potential buyer, Velocity Next offers a detailed view of numerous car models, allowing users to filter through the catalog based on various criteria like fuel type, year of production, and more.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dynamic Car Catalog**: Browse through an extensive list of cars fetched using the `cars-by-ninja-api`.
+- **Responsive Design**: Fully responsive interface, optimized for all devices and screen sizes.
+- **Advanced Search and Filters**: Custom-built filters and search functionality to find cars by manufacturer, model, year, and fuel type.
+- **Performance Optimizations**: Efficient data fetching and state management in a modern React application.
+- **Pagination**: Load more cars dynamically with pagination support.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: The React framework for production.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **TypeScript**: A strongly typed programming language that builds on JavaScript.
+- **Combox and other libraries**: Enhance UI components and manage state effectively.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prerequisites
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Before you begin, ensure you have the following installed:
+- Node.js (>=12.x)
+- npm/yarn
