@@ -23,3 +23,8 @@ Welcome to Velocity Next, a sleek web application showcasing a wide variety of c
 Before you begin, ensure you have the following installed:
 - Node.js (>=12.x)
 - npm/yarn
+
+### Screenshots
+![Screenshot 2024-04-25 at 3 08 13 PM](https://github.com/AryanT10/VelocityNext/assets/59858427/e6c90aa6-d002-4820-9bbd-080ad2b188ec)
+![Screenshot 2024-04-25 at 3 08 06 PM](https://github.com/AryanT10/VelocityNext/assets/59858427/315d3cd3-e2bb-4474-aa87-230859fcbc29)
+![Screenshot 2024-04-25 at 3 07 54 PM](https://github.com/AryanT10/VelocityNext/assets/59858427/e44ec336-7619-4c15-a5c8-4e5f2895f368)
